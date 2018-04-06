@@ -20,12 +20,13 @@ class App extends Component {
   render() {
     return (
       <div>
-        {this.state.isMounted 
-          && 
-          <Mount 
+        {this.state.isMounted
+          &&
+          <Mount
           toggleMount={this.toggleMount}
           clickHandler={this.changeColor}
-          />}
+          />
+        }
         <button onClick={this.toggleMount}>Button</button>
       </div>
     );

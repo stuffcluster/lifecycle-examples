@@ -1,4 +1,14 @@
 import React, { Component } from 'react'
+import styled from 'styled-components';
+
+const StyledButton = styled.button`
+  width: 200px;
+  height: 200px;
+  background: teal;
+  border-radius: 10px;
+  color: white;
+  margin: 20px;
+  `
 
 export default class Mount extends Component {
 
@@ -23,7 +33,7 @@ export default class Mount extends Component {
   render() {
 
     return (
-      <button onClick={this.props.clickHandler}
+      <StyledButton onClick={this.props.clickHandler}
       >
         Hello World
         Hello World
@@ -31,7 +41,7 @@ export default class Mount extends Component {
         Hello World
         Hello World
         Hello World
-      </button>
+      </StyledButton>
     )
   }
 }
